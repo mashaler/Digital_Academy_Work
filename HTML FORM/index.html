@@ -7,24 +7,26 @@
     <title>Simple HTML Form</title>
 </head>
 <body>
-    <form action="">
-        <label for="fname">First Name:</label>
+    <h1>Registration Form</h1>
+    <form action="" onsubmit="return false;">
+        <label for="fname" name="fname" id="fname" size="37">First Name:</label>
         <input type="text" placeholder="Enter your first name"><br>
 
-        <label for="lname">Last Name:</label>
+        <label for="lname" name="lname" id="lname" size="37">Last Name:</label>
         <input type="text" placeholder="Enter your last name"><br>
 
-        <label for="email">Email</label>
-        <input type="text" placeholder="Enter your email">
+        <label for="email" name="email" id="email" size="37">Email</label>
+        <input type="email" placeholder="Enter your email"><br>
 
         <select>
-            <ul>
-                <option value="country"></option>
+            <li>
+                <option value="country">Country</option>
                 <option value="south africa">South Africa</option>
                 <option value="botswana">Botswana</option>
-                <option value="Egypt">Egypt</option>
-            </ul>
+                <option value="Egypt">Egypt</option><br>
+            </li>
         </select>
+        <button type="submit" onclick="check()">Register</button>
     </form>
 </body>
 </html>
